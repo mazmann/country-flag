@@ -1,6 +1,5 @@
 body {
     overflow-y: scroll;
-    /* Always show vertical scrollbar */
     overflow-x: hidden;
 }
 
@@ -26,6 +25,9 @@ body {
     height: 2rem;
 }
 
+.activeButton {
+    background-color: #00ff00;
+}
 
 .eachCountry {
     order: 2;
@@ -49,4 +51,5 @@ body {
     max-height: 240px;
     max-width: 320px;
     min-width: 320px;
+    border: black solid 2px;
 }
