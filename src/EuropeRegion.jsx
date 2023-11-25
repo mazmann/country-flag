@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-const AfricaRegion = () => {
-    let [asianCountries, setAsianCountries] = useState([]);
+const EuropeRegion = () => {
+    let [europeCountries, setEuropeCountries] = useState([]);
     let [selectedCountry, setSelectedCountry] = useState(null);
 
     let toggleParagraph = (country) => {
@@ -13,9 +13,9 @@ const AfricaRegion = () => {
 
     useEffect(() => {
         let getAsia = async () => {
-            let response = await fetch("https://restcountries.com/v3.1/region/asia")
+            let response = await fetch("https://restcountries.com/v3.1/region/europe")
             let json = await response.json();
-            setAsianCountries(json);
+            setEuropeCountries(json);
         };
         getAsia();
 
@@ -23,7 +23,7 @@ const AfricaRegion = () => {
     
     return (
         <div className="flagContainer">
-            {asianCountries.map((country, i) => (
+            {europeCountries.map((country, i) => (
                 <div className="eachCountry" key={i}>
                     <img
                         className="eachFlag"
@@ -47,4 +47,4 @@ const AfricaRegion = () => {
     );
 };
 
-export default AfricaRegion;
+export default EuropeRegion;

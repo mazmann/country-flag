@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./styles.css"
 import AfricaRegion from "./AfricaRegion"
 import AsiaRegion from "./AsiaRegion"
+import EuropeRegion from "./EuropeRegion"
 
 export default function App() {
   let [showAfrica, setShowAfrica] = useState(false);
@@ -30,7 +31,7 @@ export default function App() {
       <button className="mainMenu" onClick={toggleEurope}>
         Europe
       </button>
-      {/* {showEurope && <EuropeRegion />} */}
+      {showEurope && <EuropeRegion />}
       </div>
     </div>
   );
