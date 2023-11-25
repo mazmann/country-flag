@@ -28,7 +28,11 @@ const AfricaRegion = () => {
                 }}
               />
               {selectedCountry === country && (
-                <p>{country.name.common}</p>
+                <div>
+                <p>Name: {country.name.common}</p>
+                <p>Capital: {country.capital}</p>
+                <p>Population: {country.population}</p>
+                </div>
               )}
             </div>
           ))}
