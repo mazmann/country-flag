@@ -20,7 +20,7 @@ const EuropeRegion = () => {
         getAsia();
 
     }, []);
-    
+
     return (
         <div className="flagContainer">
             {europeCountries.map((country, i) => (

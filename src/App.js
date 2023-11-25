@@ -17,30 +17,30 @@ export default function App() {
     <div className="App">
       <h1>React Country Flag Practice Application</h1>
       <p>Choose between the following regions below.</p>
-<div className="RegionButtons">
-<button
-        className={`mainMenu ${showAfrica ? 'activeButton' : ''}`}
-        onClick={toggleAfrica}
-      >
-        Africa
-      </button>
-      {showAfrica && <AfricaRegion />}
+      <div className="RegionButtons">
+        <button
+          className={`mainMenu ${showAfrica ? 'activeButton' : ''}`}
+          onClick={toggleAfrica}
+        >
+          Africa
+        </button>
+        {showAfrica && <AfricaRegion />}
 
-      <button
-        className={`mainMenu ${showAsia ? 'activeButton' : ''}`}
-        onClick={toggleAsia}
-      >
-        Asia
-      </button>
-      {showAsia && <AsiaRegion />}
+        <button
+          className={`mainMenu ${showAsia ? 'activeButton' : ''}`}
+          onClick={toggleAsia}
+        >
+          Asia
+        </button>
+        {showAsia && <AsiaRegion />}
 
-      <button
-        className={`mainMenu ${showEurope ? 'activeButton' : ''}`}
-        onClick={toggleEurope}
-      >
-        Europe
-      </button>
-      {showEurope && <EuropeRegion />}
+        <button
+          className={`mainMenu ${showEurope ? 'activeButton' : ''}`}
+          onClick={toggleEurope}
+        >
+          Europe
+        </button>
+        {showEurope && <EuropeRegion />}
       </div>
     </div>
   );

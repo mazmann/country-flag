@@ -20,7 +20,7 @@ const AfricaRegion = () => {
         getAfrica();
 
     }, []);
-    
+
     return (
         <div className="flagContainer">
             {africanCountries.map((country, i) => (
