@@ -1,12 +1,46 @@
+body {
+    overflow-y: scroll;
+    /* Always show vertical scrollbar */
+    overflow-x: hidden;
+}
+
 .App {
     font-family: sans-serif;
+
     display: flex;
     flex-direction: column;
     align-items: center;
 
-  }
-  
-  .RegionButtons {
-   display: flex;
-   gap: 1rem;
-  }
+
+}
+
+.RegionButtons {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.mainMenu {
+    order: 1;
+}
+
+.eachCountry {
+    order: 2;
+    text-align: center;
+}
+
+.flagContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.countryInfo {
+    max-width: 320px;
+}
+
+.eachFlag {
+    min-height: 240px;
+    max-width: 320px;
+}

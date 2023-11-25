@@ -21,12 +21,14 @@ const AfricaRegion = () => {
             setAfricanCountries(json);
         };
         getAfrica();
+
     }, []);
     return (
-        <div>
+        <div className="flagContainer">
           {africanCountries.map((country, i) => (
-            <div key={i}>
+            <div className="eachCountry" key={i}>
               <img
+                className="eachFlag"
                 id="chooseFlag"
                 src={country.flags.png}
                 alt="country"
@@ -35,7 +37,7 @@ const AfricaRegion = () => {
                 }}
               />
               {selectedCountry === country && (
-                <div>
+                <div className="countryInfo">
                 <p>Name: {country.name.common}</p>
                 <p>Capital: {country.capital}</p>
                 <p>Population: {country.population}</p>

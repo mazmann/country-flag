@@ -17,17 +17,17 @@ export default function App() {
       <h1>React Country Flag Practice Application</h1>
       <p>Choose between the following regions below.</p>
 <div className="RegionButtons">
-      <button onClick={toggleAfrica}>
+      <button className="mainMenu" onClick={toggleAfrica}>
         Africa
       </button>
       {showAfrica && <AfricaRegion />}
 
-      <button onClick={toggleAsia}>
+      <button className="mainMenu" onClick={toggleAsia}>
         Asia
       </button>
       {showAsia && <AsiaRegion />}
 
-      <button onClick={toggleEurope}>
+      <button className="mainMenu" onClick={toggleEurope}>
         Europe
       </button>
       {/* {showEurope && <EuropeRegion />} */}
